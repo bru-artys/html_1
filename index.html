@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanpage Luiz Gonzaga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(imgs/fundo.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Press Start 2P', cursive;
+            color: #000000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            font-size: 12px;
+        }
+
+        #conteudo-principal {
+            max-width: 850px;
+            margin: 0 auto;
+            background: rgba(103, 196, 139, 0.9);
+            padding: 30px;
+            border: 4px solid #013f01;
+            box-shadow: 10px 10px 0px #1b5728;
+        }
+
+        .cabecalho {
+            border-bottom: 3px solid #003510;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .menu-navegacao a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #1b5728;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 10px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .menu-navegacao a:hover {
+            background-color: rgb(40, 85, 72);
+            text-decoration: underline;
+        }
+
+        .sessao-biografia {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .img1 {
+            width: 200px;
+            border-radius: 20px;
+            border: 4px solid #00741d;
+            box-shadow: 5px 5px 0px #013f01;
+        }
+
+        .texto-bio {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .card-curiosidade {
+            background: #fff;
+            border: 4px solid #000;
+            padding: 15px;
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 6px 6px 0px #555;
+        }
+
+        .img-curiosidade {
+            width: 80px;
+            height: 80px;
+            image-rendering: pixelated;
+        }
+
+
+        .tabela-musicas {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f0f0f0;
+            border: 4px solid #000;
+            margin-top: 20px;
+        }
+
+        .tabela-musicas th, .tabela-musicas td {
+            border: 2px solid #000;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .tabela-musicas th {
+            background-color: #1b5728;
+            color: white;
+            font-size: 10px;
+        }
+
+        /* Botão Play Pixel */
+        .btn-play {
+            display: inline-block;
+            background-color: #3eb171;
+            color: white;
+            padding: 6px 10px;
+            text-decoration: none;
+            border: 3px solid #000;
+            box-shadow: 3px 3px 0px #013521;
+            font-size: 9px;
+            cursor: pointer;
+        }
+
+        .btn-play:hover {
+            background-color: #3f863f;
+            box-shadow: 2px 2px 0px #005500;
+            color: rgb(255, 255, 255);
+        }
+
+        .btn-play:active {
+            box-shadow: 0px 0px 0px;
+            transform: translate(3px, 3px);
+        }
+
+        .rodape {
+            margin-top: 40px;
+            font-size: 0.7em;
+            text-align: center;
+            border-top: 2px dashed #013f01;
+            padding-top: 15px;
+        }
+
+        h2 { font-size: 16px; color: #003510; }
+    </style>
+</head>
+<body>
+
+    <div id="conteudo-principal">
+        <header class="cabecalho">
+            <img src="imgs/logo.png" alt="logo" style="width: 150px;">
+            <h1>Fanpage Luiz Gonzaga</h1>
+            <nav class="menu-navegacao">
+                <a href="#bio"> Biografia </a>
+                <a href="#curiosidades"> Curiosidades </a>
+                <a href="#musicas"> Músicas </a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="bio" class="sessao-biografia">
+                <img src="imgs/img1.png" alt="Luiz Gonzaga" class="img1">
+                <div class="texto-bio">
+                    <h2>Sobre o Rei do Baião</h2>
+                    <p>Luiz Gonzaga foi um cantor, compositor e multi-instrumentista brasileiro. Considerado uma das figuras mais importantes da música popular brasileira, levou a cultura nordestina para o mundo com sua sanfona.</p>
+                </div>
+            </section>
+
+            <section id="curiosidades">
+                <div class="card-curiosidade">
+                    <img src="imgs/sanfona.gif" alt="Icone" class="img-curiosidade">
+                    <div>
+                        <h2 style="margin: 0; font-size: 14px;">Curiosidade Pixel</h2>
+                        <p style="margin: 5px 0 0 0;">Você sabia que Luiz Gonzaga serviu o exército por 10 anos antes de se tornar o famoso Rei do Baião?</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="musicas">
+                <h2>Top 10 Músicas</h2>
+                <table class="tabela-musicas">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Música</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>01</td>
+                            <td>Asa Branca</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>02</td>
+                            <td>O Xote das Meninas</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>03</td>
+                            <td>Pagode Russo</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>04</td>
+                            <td>A Vida do Viajante</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>05</td>
+                            <td>Sabiá</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>06</td>
+                            <td>Riacho do Navio</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>07</td>
+                            <td>Numa Sala de Reboco</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>08</td>
+                            <td>Assum Preto</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>09</td>
+                            <td>Olha Pro Céu</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>Qui Nem Jiló</td>
+                            <td><a class="btn-play">▶ PLAY</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Feito por [bruno] &copy; 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>>
